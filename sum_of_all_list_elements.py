@@ -10,12 +10,10 @@ def get_sum_of_elements(list):
 get_sum_of_elements([2, 7, 4])
 
 # Actual (1)
-
 def get_sum_of_elements(lst):
     return sum(lst)
 
 # Actual (2)
-
 def get_sum_of_elements(lst):
     sum = 0
     for i in lst:
