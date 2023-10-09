@@ -6,4 +6,3 @@ def ctoa(char):
 ctoa("A")
 ctoa("m")
 ctoa("[")
-ctoa("\")
