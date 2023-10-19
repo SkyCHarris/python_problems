@@ -9,7 +9,6 @@ def parity_analysis(num):
         return True
     elif num % 2 != 0 and sum(range(num)) % 2 != 0:
         return False
-    elif 
     
 # Attempt 2
 
