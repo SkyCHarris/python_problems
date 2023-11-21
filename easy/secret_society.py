@@ -33,8 +33,16 @@ def society_name(friends):
     friends.sort()
     team_name = ''
     for i in friends:
-        team_name = team_name + i[0]
+        team_name += i[0]
     return team_name
+
+society_name(["Adam", "Sarah", "Malcom"])
+society_name(["Harry", "Newt", "Luna", "Cho"])
+
+# Condensed (taken from Edabit)
+
+def society_name(friends):
+    return ''.join(sorted(i[0] for i in friends))
 
 society_name(["Adam", "Sarah", "Malcom"])
 society_name(["Harry", "Newt", "Luna", "Cho"])
