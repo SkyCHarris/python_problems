@@ -82,3 +82,7 @@ def greet_people(names):
 greet_people(["Joe"])
 greet_people(["Angela", "Joe"])
 greet_people(["Frank", "Angela", "Joe"])
+
+#* the .append() method can take additional parameters, such as a string format.
+#* ex.:
+    #
