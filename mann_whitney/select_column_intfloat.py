@@ -34,12 +34,17 @@ def get_column(sheet, column_name):
 # print(get_column(2, "BI"))
 
 
+columnL_height = scipy.stats.mannwhitneyu(get_column(1, "L"), get_column(2, "L"))
+
 # columnF = scipy.stats.mannwhitneyu(get_column(1, "F"), get_column(2, "F"))
 columnAL = scipy.stats.mannwhitneyu(get_column(1, "AL"), get_column(2, "AL"))
 columnAP = scipy.stats.mannwhitneyu(get_column(1, "AP"), get_column(2, "AP"))
 # columnBD = scipy.stats.mannwhitneyu(get_column(1, "BD"), get_column(2, "BD"))
 columnBI = scipy.stats.mannwhitneyu(get_column(1, "BI"), get_column(1, "BI"))
 
+
+
+print(f"Colunmn L Mann-Whitney U test results: {columnL_height}")
 # print(f"Column F Mann-Whitney U test results: {columnF}")
 print(f"Column AL Mann-Whitney U test results: {columnAL}")
 print(f"Column AP Mann-Whitney U test results: {columnAP}")
