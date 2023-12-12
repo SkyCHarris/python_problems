@@ -10,6 +10,7 @@
 
 # Create a function for this
 
+#TODO: THIS IS CORRECT
 def hamming_distance(txt1, txt2):
     count = 0
     mapped = list(zip(txt1, txt2))
@@ -59,3 +60,4 @@ def hamming_distance(txt1, txt2):
 hamming_distance("abcde", "bcdef")
 hamming_distance("abcde", "abcde")
 hamming_distance("strong", "strung")
+
