@@ -60,3 +60,5 @@ is_vowel_sandwich("cat")
 is_vowel_sandwich("ear")
 is_vowel_sandwich("bake")
 is_vowel_sandwich("try")
+
+#TODO: Getting list index out of range error
