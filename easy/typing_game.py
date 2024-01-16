@@ -53,7 +53,7 @@ correct_stream(
 
 def correct_stream(user, correct):
     answer_tuple = zip(user, correct)
-    answer_list = [1 for i == j in else -1 for i!= j answer_tuple]
+    # answer_list = [1 for i == j in else -1 for i!= j answer_tuple]
     return answer_list
 
 correct_stream(
