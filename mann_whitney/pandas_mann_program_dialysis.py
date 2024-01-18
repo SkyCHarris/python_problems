@@ -5,7 +5,7 @@ import re
 
 # Load Excel file
 
-xls = pd.ExcelFile('mann_whitney/dialysis_1.xlsx')
+xls = pd.ExcelFile('dialysis_1.xlsx')
 df1 = pd.read_excel(xls, 'GROUP 1 SUCCESSFUL')
 df2 = pd.read_excel(xls, 'GROUP 2 DIALYSIS')
 
@@ -39,12 +39,6 @@ tug_pf_I2 = pd.to_numeric(df2[column_name_I], errors='coerce').dropna().tolist()
 moca_pf_J1 = pd.to_numeric(df1[column_name_J], errors='coerce').dropna().tolist()
 moca_pf_J2 = pd.to_numeric(df2[column_name_J], errors='coerce').dropna().tolist()
 
-
-
-# print(tug_pf_I1)
-# print(tug_pf_I2)
-# # print(moca_pf_J1)
-# # print(moca_pf_J2)
 
 print(f"PTH (Dialysis): {scipy.stats.mannwhitneyu(pth_B1_dialysis, pth_B2_dialysis)}")
 print(f"CA (Dialysis): {scipy.stats.mannwhitneyu(ca_C1_dialysis, ca_C2_dialysis)}")
